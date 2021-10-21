@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e8c2a7fc9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sass/style.css">
 </head>
 <body>
     <header>
@@ -49,7 +48,7 @@
                     <div class="aboutText">
                         <h4>Bree Horton</h4>
                         <p>Hi there! I'm an enthusiastic front-end web developer based in Toronto, Ontario. I love working in collaborative environments to create engaging and user-friendly websites.</p>
-                        <p>I'm passionate about the arts (you can hear me singing an opera aria<a target="_blank" href="https://www.youtube.com/watch?v=S8vUL-sg7Xw"> here!</a>), kayaking, and baking.</p>
+                        <p>I'm passionate about the arts (you can hear me singing an opera aria <a href="https://www.youtube.com/watch?v=S8vUL-sg7Xw">here!</a>), kayaking, and baking.</p>
                     </div> <!--- ./aboutText -->
                 </div> <!--- ./aboutContainer -->
             </div> <!--- ./wrapper -->
@@ -116,10 +115,10 @@
                             <i class="fab fa-css3-alt"></i>
                             <i class="fab fa-react"></i>
                             <i class="fas fa-fire"></i>
-                            <a target="_blank" href="https://github.com/BreeAlexandra/singing-journal">GitHub</a>
+                            <a class ="gitHubLink" href="https://github.com/BreeAlexandra/singing-journal">GitHub</a>
                         </div> <!--- ./p1Text -->
                         <div class="p1Link">
-                            <a target="_blank" href="https://bree-horton-project3.netlify.app/"><img src="./assets/singingJournal.jpg" alt="homepage of Singing Journal project"></a>
+                            <a href="https://bree-horton-project3.netlify.app/"><img src="./assets/singingJournal.jpg" alt="homepage of Singing Journal project"></a>
                         </div> <!--- ./p1Link -->
                     </div> <!--- ./project1 -->
                     <div class="project2">
@@ -129,25 +128,25 @@
                             <i class="fab fa-css3-alt"></i>
                             <i class="fab fa-react"></i>
                             <i class="fas fa-cog"></i>
-                            <a target="_blank" href="https://github.com/makeup-to-art/makeup-to-art">GitHub</a>
+                            <a class ="gitHubLink" href="https://github.com/makeup-to-art/makeup-to-art">GitHub</a>
                         </div> <!--- ./p2Text -->
                         <div class="p2Link">
-                            <a target="_blank" href="https://makeup-to-art.netlify.app/"><img src="./assets/hueAreYou.jpg" alt="homepage of Hue Are You project"></a>
+                            <a href="https://makeup-to-art.netlify.app/"><img src="./assets/hueAreYou.jpg" alt="homepage of Hue Are You project"></a>
                         </div> <!--- ./p2Link -->
                     </div> <!--- ./project2 -->
                     <div class="project3">
                         <div class="p3Text">
                             <h4>That Actor from that Thing</h4>
-                            <p>This app helps you remember the name of an actor you can't place, based on what you remember about a movie they were in. </p>
+                            <p>This app helps you remember the name of an actor you can't place, based on what you remember about a movie they were in. This was a paired project with my pal <a class="kevin" href="https://www.kevwritescode.com/">Kevin</a>.</p>
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-sass"></i>
                             <i class="fab fa-js-square"></i>
                             <i class="fas fa-cog"></i>
                             <i class="fas fa-handshake"></i>
-                            <a target="_blank" href="https://github.com/projectActorFromThing/projectActorFromThing">GitHub</a>
+                            <a class ="gitHubLink" href="https://github.com/projectActorFromThing/projectActorFromThing">GitHub</a>
                         </div> <!--- ./p3Text -->
                         <div class="p3Link">
-                            <a target="_blank" href="https://projectactorfromthing.github.io/projectActorFromThing/"><img src="./assets/thatActor.jpg" alt="homepage of That Actor from that Thing project"></a>
+                            <a href="https://projectactorfromthing.github.io/projectActorFromThing/"><img src="./assets/thatActor.jpg" alt="homepage of That Actor from that Thing project"></a>
                         </div> <!--- ./p3Link -->
                     </div><!--- ./project3 -->
                     <div class="project4">
@@ -156,11 +155,11 @@
                             <p class="beachP">A multi-page, fully responsive, website transformed from a static design.</p>
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
-                            <a target="_blank" href="https://github.com/BreeAlexandra/breeHortonProjectOne">GitHub</a>
+                            <a class ="gitHubLink" href="https://github.com/BreeAlexandra/breeHortonProjectOne">GitHub</a>
                         </div>
                         <!--- ./p4Text -->
                         <div class="p4Link">
-                            <a target="_blank" href="https://beachstaysproject.netlify.app/"><img src="./assets/beachstays.jpg"
+                            <a href="https://beachstaysproject.netlify.app/"><img src="./assets/beachstays.jpg"
                                     alt="homepage of Beachstays project"></a>
                         </div> <!--- ./p4Link -->
                     </div> <!--- ./project4 -->
@@ -178,19 +177,19 @@
                 <div class="formContainer">
                     <form action="https://formspree.io/f/mgerbyjy" method="post" class="wrapper">
                         <label for="name" class="sr-only">Your Name</label>
-                        <input type="text" name="name" id="name" placeholder="name">
+                        <input type="text" name="name" id="name" placeholder="name" required>
                         <label for="email" class="sr-only">Your Email</label>
-                        <input type="email" name="email" id="email" placeholder="email">
-                        <textarea name="message" id="message" placeholder="message"></textarea>
+                        <input type="email" name="email" id="email" placeholder="email" required>
+                        <textarea name="message" id="message" placeholder="message" required></textarea>
                         <button class="button" type="submit">Get in Touch</button>
                     </form>
                 </div>
                 <div class="contactContainer">
                     <div class="contactIcons">
-                        <a target="_blank" href="https://www.linkedin.com/in/bree-horton-63925721a/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://github.com/BreeAlexandra"><i class="fab fa-github"></i></i></a>
-                        <a target="_blank" href="https://twitter.com/BreeAlexandraH"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/breealexandrah/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bree-horton-63925721a/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/BreeAlexandra"><i class="fab fa-github"></i></i></a>
+                        <a href="https://twitter.com/BreeAlexandraH"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/breealexandrah/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer">
