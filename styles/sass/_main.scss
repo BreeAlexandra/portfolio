@@ -1,0 +1,228 @@
+// ABOUT SECTION //
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.aboutImg {
+    width: 30%;
+    text-align: end;
+        img {
+            width: 250px;
+        }
+}
+
+.aboutImg::before {
+    content : '';
+    width: 50%;
+    height: 1px;
+    background: $primarycolor;
+    display: block;
+    margin: 6% 0 10% 50%;
+    text-align: end;
+}
+
+.aboutText {
+    width: 60%;
+        p {
+            padding: 20px 0;
+                a {
+                    color: black;
+                }
+        }
+}
+
+// SKILLS SECTION //
+
+.skillsSection {
+    background: $secondarycolor;
+    padding-bottom: 50px;
+}
+
+.skills {
+    justify-content: space-evenly;
+    padding: 0;
+        li {
+            text-align: center;
+            color: $primarycolor;
+            width: 20%;
+            margin: 15px 0;
+                i {
+                    font-size: 2rem;
+                    padding: 10px 0;
+                }
+        }
+}
+
+
+// PROJECTS SECTION //
+    
+.project1,
+.project2,
+.project3,
+.project4 {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid $primarycolor;
+    height: 100%;
+    margin: 75px 0;
+    position: relative;
+}
+
+.p1Text,
+.p2Text,
+.p3Text,
+.p4Text {
+    width: 50%;
+    padding: 10px;
+        a {
+            margin: 5px 0;
+            padding: 7px;
+            background: $primarycolor;
+            color: white;
+            border: none;
+            display: block;
+            text-decoration: none;
+            width: 25%;
+            text-align: center;
+        }
+}
+
+.p1Text a:hover,
+.p2Text a:hover,
+.p3Text a:hover,
+.p4Text a:hover,
+.p1Text a:focus,
+.p2Text a:focus,
+.p3Text a:focus,
+.p4Text a:focus {
+    background: white;
+    color: $primarycolor;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.p1Link,
+.p2Link,
+.p3Link,
+.p4Link {
+    width: 50%;
+    position: absolute;
+    top: 21px;
+    right: -30px;
+}
+
+.p1Link:hover,
+.p2Link:hover,
+.p3Link:hover,
+.p4Link:hover {
+    box-shadow: 5px 5px 5px grey;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.projects p {
+    padding: 5px 0;
+}
+
+.projects .beachP {
+    padding-bottom: 50px;
+}
+
+.projects i {
+    padding: 3px;
+    font-size: 1.2rem;
+    color: $primarycolor;
+}
+
+// CONTACT SECTION //
+
+.background {
+    height: 70vh;
+    position: relative;
+}
+
+.formContainer {
+    background: $secondarycolor;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+                input {
+                    width: 50%;
+                    margin: 5px 0;
+                    padding: 5px;
+                }
+                textarea {
+                    resize: none;
+                    width: 70%;
+                    height: 200px;
+                    margin: 5px 0;
+                    padding: 5px;
+            
+                }
+        }
+}
+
+form button {
+    width: 50%;
+    margin: 5px 0;
+    padding: 5px;
+    background: $primarycolor;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+form button:hover,
+form button:focus {
+    background: white;
+    color: grey;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.contactContainer {
+    background: $primarycolor;
+    height: calc(100% / 3);
+    width: 65%;
+    position: absolute;
+    top: 34%;
+    right: 0px;
+}
+
+.contactIcons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+        a {
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px;
+        }
+}
+
+// FOOTER //
+
+.footer {
+    background: black;
+    position: absolute;
+    height: calc(100% / 3);
+    width: 65%;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        p {
+            color: white;
+        }
+}

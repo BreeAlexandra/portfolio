@@ -1,0 +1,138 @@
+@media (max-width: 950px) {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+    .p1Text,
+    .p2Text,
+    .p3Text,
+    .p4Text {
+        width: 75%;
+        text-align: center;
+            a {
+                margin: 5px auto;
+            }
+    }
+    .projects .beachP {
+        padding-bottom: 5px;
+    }
+    .p1Link,
+    .p2Link,
+    .p3Link,
+    .p4Link {
+        position: static;
+        padding: 8px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills li {
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .background {
+        position: static;
+    }
+    .formContainer,
+    .contactContainer,
+    .footer {
+        position: static;
+        width: 100%;
+    }
+    .footer {
+        height: 10vh;
+    }
+}
+
+@media (max-width: 640px) {
+    .skills li {
+        width: 40%;
+    }
+    .p1Text a,
+    .p2Text a,
+    .p3Text a,
+    .p4Text a {
+        width: 40%;
+    }
+    .formContainer form input,
+    .formContainer form textarea {
+        width: 100%;
+    }
+    .formContainer button {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 440px) {
+    nav {
+        width: 100%;
+    }
+    .hamIcon,
+    .closeIcon {
+        display: block;
+        cursor: pointer;
+    }
+    .navBar {
+        display: none;
+        flex-direction: column;
+        top: 0;
+    }
+    .showNavBar {
+        display: block;
+    }
+    .closeIcon {
+        display: none;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .aboutImg {
+        width: 100%;
+            img {
+                width: 100%;
+            }
+    }
+    .aboutText {
+        width: 100%;
+        text-align: center;
+    }
+    .skills li {
+        width: 50%;
+
+    }
+    .p1Text a,
+    .p2Text a,
+    .p3Text a,
+    .p4Text a {
+        width: 50%;
+    }
+
+}

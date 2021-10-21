@@ -1,0 +1,63 @@
+.navBar {
+    justify-content: flex-end;
+        a {
+            text-decoration: none;
+            color: $primarycolor;
+            text-transform: uppercase;
+        }
+}
+
+.navBar a:hover,
+.navBar a:focus {
+    border-bottom: solid 2px $secondarycolor;
+}
+
+.hamburger {
+    border: none;
+    background: white;
+}
+
+.hamIcon,
+.closeIcon {
+            display: none;
+            color: $primarycolor;
+            font-size: 1.5rem;
+            padding: 10px;  
+        }
+
+.headerContainer {
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 50px 0;
+    background-color: #F7F9FA;      
+}
+
+.headerImg {
+    border: 3px solid $primarycolor;
+    position: relative;
+    width: 300px;
+    height: 490px;
+        img {
+                width: 300px;
+                position: absolute;
+                top: 22px;
+                right: -30px;
+        }
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: $primarycolor;
+    font-size: 2rem;
+
+}
+
+h2  {
+    color: $primarycolor;
+    font-weight: 400;
+}
