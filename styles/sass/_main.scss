@@ -58,49 +58,74 @@
 
 
 // PROJECTS SECTION //
-    
+.projectBackground1 {
+    background: linear-gradient(90deg, $secondarycolor 50%, $primarycolor 50%);
+}
+.projectBackground2 {
+    background: linear-gradient(90deg, $primarycolor 50%, $secondarycolor 50%);
+}
+
 .project1,
 .project2,
 .project3,
 .project4 {
     display: flex;
-    justify-content: space-between;
-    border: 3px solid $primarycolor;
-    max-width: 1050px;
-    height: 100%;
-    margin: 75px 0;
-    position: relative;
+    align-items: center;
 }
 
 .p1Text,
 .p2Text,
 .p3Text,
 .p4Text {
+    color: white;
     width: 50%;
-    padding: 10px;
+    padding: 25px 50px;
+        p {
+            padding: 10px 0;
+        }
 }
 
-.gitHubLink {
-            margin: 5px 0;
-            padding: 7px;
-            background: $primarycolor;
+.p2Text h4,
+.p4Text h4 {
+    color: $secondarycolor;
+}
+
+.gitHubLink1,
+.gitHubLink2 {
+            margin-top: 15px;
+            padding: 10px;
             color: white;
             border: none;
             display: block;
             text-decoration: none;
-            width: 25%;
+            width: 30%;
             text-align: center;
 }
 
-.gitHubLink:hover {
+.gitHubLink1:hover,
+.gitHubLink2:hover {
     background: white;
-    color: $primarycolor;
     transition: all 1s ease-in-out;
     cursor: pointer;
 }
+.gitHubLink1 {
+    background: $primarycolor;
+}
+
+.gitHubLink1:hover {
+    color: $primarycolor;
+}
+
+.gitHubLink2 {
+    background: $secondarycolor;
+}
+
+.gitHubLink2:hover {
+    color: $secondarycolor;
+}
 
 .kevin {
-    color: black;
+    color: white;
 }
 
 .p1Link,
@@ -109,32 +134,15 @@
 .p4Link {
     max-width: 500px;
     width: 50%;
-    position: absolute;
-    top: 21px;
-    right: -30px;
+    padding: 25px 50px;
 }
 
 .p1Link:hover,
 .p2Link:hover,
 .p3Link:hover,
 .p4Link:hover {
-    box-shadow: 5px 5px 5px grey;
     transform: scale(1.1);
     transition: all .3s ease-in-out;
-}
-
-.projects p {
-    padding: 5px 0;
-}
-
-.projects .beachP {
-    padding-bottom: 50px;
-}
-
-.projects i {
-    padding: 3px;
-    font-size: 1.2rem;
-    color: $primarycolor;
 }
 
 // CONTACT SECTION //

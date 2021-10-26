@@ -406,48 +406,79 @@ h2 {
   padding: 10px 0;
 }
 
+.projectBackground1 {
+  background: linear-gradient(90deg, #373741 50%, #FF9D8E 50%);
+}
+
+.projectBackground2 {
+  background: linear-gradient(90deg, #FF9D8E 50%, #373741 50%);
+}
+
 .project1,
 .project2,
 .project3,
 .project4 {
   display: flex;
-  justify-content: space-between;
-  border: 3px solid #FF9D8E;
-  max-width: 1050px;
-  height: 100%;
-  margin: 75px 0;
-  position: relative;
+  align-items: center;
 }
 
 .p1Text,
 .p2Text,
 .p3Text,
 .p4Text {
+  color: white;
   width: 50%;
-  padding: 10px;
+  padding: 25px 50px;
+}
+.p1Text p,
+.p2Text p,
+.p3Text p,
+.p4Text p {
+  padding: 10px 0;
 }
 
-.gitHubLink {
-  margin: 5px 0;
-  padding: 7px;
-  background: #FF9D8E;
+.p2Text h4,
+.p4Text h4 {
+  color: #373741;
+}
+
+.gitHubLink1,
+.gitHubLink2 {
+  margin-top: 15px;
+  padding: 10px;
   color: white;
   border: none;
   display: block;
   text-decoration: none;
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 
-.gitHubLink:hover {
+.gitHubLink1:hover,
+.gitHubLink2:hover {
   background: white;
-  color: #FF9D8E;
   transition: all 1s ease-in-out;
   cursor: pointer;
 }
 
+.gitHubLink1 {
+  background: #FF9D8E;
+}
+
+.gitHubLink1:hover {
+  color: #FF9D8E;
+}
+
+.gitHubLink2 {
+  background: #373741;
+}
+
+.gitHubLink2:hover {
+  color: #373741;
+}
+
 .kevin {
-  color: black;
+  color: white;
 }
 
 .p1Link,
@@ -456,32 +487,15 @@ h2 {
 .p4Link {
   max-width: 500px;
   width: 50%;
-  position: absolute;
-  top: 21px;
-  right: -30px;
+  padding: 25px 50px;
 }
 
 .p1Link:hover,
 .p2Link:hover,
 .p3Link:hover,
 .p4Link:hover {
-  box-shadow: 5px 5px 5px grey;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
-}
-
-.projects p {
-  padding: 5px 0;
-}
-
-.projects .beachP {
-  padding-bottom: 50px;
-}
-
-.projects i {
-  padding: 3px;
-  font-size: 1.2rem;
-  color: #FF9D8E;
 }
 
 .background {
@@ -576,13 +590,20 @@ form button:focus {
 }
 
 @media (max-width: 950px) {
+  .projectBackground1 {
+    background: #373741;
+  }
+
+  .projectBackground2 {
+    background: #FF9D8E;
+  }
+
   .project1,
 .project2,
 .project3,
 .project4 {
     flex-direction: column;
-    align-items: center;
-    position: static;
+    padding: 25px;
   }
 
   .p1Text,
@@ -592,23 +613,16 @@ form button:focus {
     width: 75%;
     text-align: center;
   }
-  .p1Text a,
-.p2Text a,
-.p3Text a,
-.p4Text a {
-    margin: 5px auto;
-  }
 
-  .projects .beachP {
-    padding-bottom: 5px;
+  .gitHubLink1,
+.gitHubLink2 {
+    margin: 15px auto 10px;
   }
 
   .p1Link,
 .p2Link,
 .p3Link,
 .p4Link {
-    position: static;
-    padding: 8px;
     width: 75%;
   }
 }
@@ -632,6 +646,17 @@ form button:focus {
     text-align: center;
   }
 
+  .p1Text,
+.p2Text,
+.p3Text,
+.p4Text,
+.p1Link,
+.p2Link,
+.p3Link,
+.p4Link {
+    width: 100%;
+  }
+
   .background {
     position: static;
   }
@@ -652,10 +677,22 @@ form button:focus {
     width: 40%;
   }
 
-  .p1Text a,
-.p2Text a,
-.p3Text a,
-.p4Text a {
+  .project1,
+.project2,
+.project3,
+.project4 {
+    padding: 0;
+  }
+
+  .p1Text,
+.p2Text,
+.p3Text,
+.p4Text {
+    padding: 25px 0;
+  }
+
+  .gitHubLink1,
+.gitHubLink2 {
     width: 40%;
   }
 
@@ -725,10 +762,8 @@ form button:focus {
     width: 50%;
   }
 
-  .p1Text a,
-.p2Text a,
-.p3Text a,
-.p4Text a {
+  .gitHubLink1,
+.gitHubLink2 {
     width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

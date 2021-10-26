@@ -1,11 +1,16 @@
 @media (max-width: 950px) {
+    .projectBackground1 {
+        background: $secondarycolor;
+    }
+    .projectBackground2 {
+        background: $primarycolor;
+    }
     .project1,
     .project2,
     .project3,
     .project4 {
         flex-direction: column;
-        align-items: center;
-        position: static;
+        padding: 25px;
     }
     .p1Text,
     .p2Text,
@@ -13,19 +18,16 @@
     .p4Text {
         width: 75%;
         text-align: center;
-            a {
-                margin: 5px auto;
-            }
     }
-    .projects .beachP {
-        padding-bottom: 5px;
+    .gitHubLink1,
+    .gitHubLink2 {
+        margin: 15px auto 10px;
     }
+
     .p1Link,
     .p2Link,
     .p3Link,
     .p4Link {
-        position: static;
-        padding: 8px;
         width: 75%;
     }
 }
@@ -49,6 +51,17 @@
     h2 {
         text-align: center;
     }
+    .p1Text,
+    .p2Text,
+    .p3Text,
+    .p4Text,
+    .p1Link,
+    .p2Link,
+    .p3Link,
+    .p4Link {
+        width: 100%;
+    }
+
     .background {
         position: static;
     }
@@ -67,10 +80,20 @@
     .skills li {
         width: 40%;
     }
-    .p1Text a,
-    .p2Text a,
-    .p3Text a,
-    .p4Text a {
+    .project1,
+    .project2,
+    .project3,
+    .project4 {
+        padding: 0;
+    }
+    .p1Text,
+    .p2Text,
+    .p3Text,
+    .p4Text {
+        padding: 25px 0;
+    }
+    .gitHubLink1,
+    .gitHubLink2 {
         width: 40%;
     }
     .formContainer form input,
@@ -128,10 +151,8 @@
         width: 50%;
 
     }
-    .p1Text a,
-    .p2Text a,
-    .p3Text a,
-    .p4Text a {
+    .gitHubLink1,
+    .gitHubLink2 {
         width: 50%;
     }
 
