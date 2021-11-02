@@ -34,6 +34,24 @@
         }
 }
 
+.resume {
+    margin: 15px 0;
+    padding: 10px 15px;
+    background: $primarycolor;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+
+.resume:hover,
+.resume:focus {
+    background: white;
+    color: $primarycolor;
+    cursor: pointer;
+}
+
 // SKILLS SECTION //
 
 .skillsSection {
@@ -100,12 +118,12 @@
             text-decoration: none;
             width: 30%;
             text-align: center;
+            transition: all 1s ease-in-out;
 }
 
 .gitHubLink1:hover,
 .gitHubLink2:hover {
     background: white;
-    transition: all 1s ease-in-out;
     cursor: pointer;
 }
 .gitHubLink1 {
@@ -135,6 +153,7 @@
     max-width: 500px;
     width: 50%;
     padding: 25px 50px;
+    transition: all .3s ease-in-out;
 }
 
 .p1Link:hover,
@@ -142,7 +161,6 @@
 .p3Link:hover,
 .p4Link:hover {
     transform: scale(1.1);
-    transition: all .3s ease-in-out;
 }
 
 // CONTACT SECTION //
@@ -180,20 +198,20 @@
 
 form button {
     width: 50%;
-    margin: 5px 0;
-    padding: 5px;
+    margin: 7px 0;
+    padding: 7px;
     background: $primarycolor;
     color: white;
     border: none;
     text-transform: uppercase;
     display: block;
+    transition: all 1s ease-in-out;
 }
 
 form button:hover,
 form button:focus {
     background: white;
     color: grey;
-    transition: all 1s ease-in-out;
     cursor: pointer;
 }
 
